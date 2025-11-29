@@ -19,3 +19,27 @@ def get_chars_dict(text):                   #boot.dev solution. More correct for
         else:
             chars[lowered] = 1
     return chars
+
+def sort_on(letter):
+    return letter["num"]
+def sort_dicts(character_count):
+    sorted_list = []
+    for char in character_count:
+        count = character_count[char]
+        letter = {"char": char, "num": count}
+        sorted_list.append(letter)
+    sorted_list.sort(key=sort_on, reverse=True)
+    return sorted_list
+
+#character_count = {"a": 2, "b": 5}
+#for char in character_count:
+    #print(char, character_count[char])
+
+
+
+
+        
+        
+    sorted.sort()
+    
+
