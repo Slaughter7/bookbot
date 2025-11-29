@@ -8,6 +8,10 @@ def main():
     word_count = number_of_words(text)      #sets variable "word_count" to call the function "number_of_words" with input "text"
     character_count = count_characters(text)
     sorted_count = sort_dicts(character_count)
+    print_report(path, word_count, sorted_count)    #calls the function print_report() with the three variables it needs to print 
+
+
+def print_report(path, word_count, sorted_count):   #new function to handle the printing
     print("============ BOOKBOT ============")  #prints using the format bootdev is looking for
     print(f"Analyzing book found at {path}...")
     print("----------- Word Count ----------")
