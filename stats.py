@@ -20,26 +20,14 @@ def get_chars_dict(text):                   #boot.dev solution. More correct for
             chars[lowered] = 1
     return chars
 
-def sort_on(letter):
+def sort_on(letter):                        #returns a key for the .sort(), that being the number value in the dictionary
     return letter["num"]
-def sort_dicts(character_count):
-    sorted_list = []
+def sort_dicts(character_count):            #check each individual entry in the main dictionary, and makes a list of small dictionaries for each letter and its count. Then sorts them based on the key from the sort_on function,
+    sorted_list = []                        #and reverses it so it is sorted from highest count to lowest count. 
     for char in character_count:
         count = character_count[char]
         letter = {"char": char, "num": count}
         sorted_list.append(letter)
     sorted_list.sort(key=sort_on, reverse=True)
     return sorted_list
-
-#character_count = {"a": 2, "b": 5}
-#for char in character_count:
-    #print(char, character_count[char])
-
-
-
-
-        
-        
-    sorted.sort()
-    
 
