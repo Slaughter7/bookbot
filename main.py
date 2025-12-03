@@ -1,5 +1,5 @@
 from stats import number_of_words           #imports functions from other files in directory
-from stats import count_characters
+from stats import count_characters          #test comment
 from stats import sort_dicts
 import sys
 
